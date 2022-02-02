@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+    integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+    crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.29/lib/p5.serialport.js"></script>
+    <script src="scripts/script.js"></script>
+    <title>My test page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color:rgb(150);">
+    <h1>TEST Page</h1>
+    <h2>Connected Assignment 1</h2>
+    <!-- <p>test, In the text is a <span class="span1">span element</span> </p> -->
+
+    <ul>
+        <li class="special">List 1</li>
+        <li><a href="https://example.com">Example Website</a></li>
+        <li><section id="serialport">Select a serial port: 
+            <select id="portSelector"></select></section></li>
+    </ul>
+    
+    <!-- <button>Button</button>
+    
+    <p>Slider</p>
+    <div>
+        <input type="range" id="volume" name="volume"
+        min="0" max="11">
+        <label for="volume">Volume</label>
+    </div> -->
+
+    <section id="controls"><h2>Serial to Browser</h2>
+        Power: <input type="button" id="power" value="on/off">
+        <span id="powerVal"></span><br>
+        <p></p>
+        Knob Number: <input type="number" min="0" max="100" value="0">
+       <span id="knobNumber"></span><br>
+       <p></p>
+        Brightness: <input type="range" id="brightness" min="0" max="100" value="0">
+        <span id="brightnessVal"></span><br>
+        <p></p>
+        Color: <input type="color" id="colorBox" value="#z56465">
+       <span id="color">Color</span><br>
+       
+       
+      </section>
+
+
+
+      <p></p>
+      <img src="https://i.postimg.cc/CxKxsfrB/20220201-202425.jpg" width="600px"> 
+      <img src="https://i.postimg.cc/NF6zJckJ/Snipaste-2022-02-01-20-16-22.jpg" width="600px">
+
+      <h2>Notes during the learning process of html, js, and CSS:</h2>
+      <p>All HTML documents must start with a <!DOCTYPE> declaration. The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+        <br>
+        A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure.
+        <br>
+        What happens if a browser encounters CSS it doesn't understand? The answer is that it does nothing, and just moves on to the next bit of CSS! If a browser is parsing your rules, and encounters a property or value that it doesn't understand, it ignores it and moves on to the next declaration.
+        <br>
+        The ol tag defines an ordered list. An ordered list can be numerical or alphabetical.
+        <br>
+        The ul tag defines an unordered (bulleted) list.
+        <br>
+        The EventListener interface represents an object that can handle an event dispatched by an EventTarget object.
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        I wanted to use input from the rotary encoder to control the background color of my webpage, how could I do that, should I link to html or CSS file?
+        <br>
+        API, DOM, Node.js, addEventListener
+        <br>
+        How to control CSS elements via serialport?
+        <br>
+        How to use digital input from web to control the brightness of a LED?
+      </p>
+      
+      <h2>Notes on readings</h2>
+      <p>Marc Weiser, “The Computer for the 21st Century” (Scientific American, 1991)
+        <br>
+        keywords: "Ubiquitous Computing", user-interface problem, invisible, vanish, disappear, screen demanding focus of attention, embodied virtuality, location and scale, hundreds of computers per room, pads, palmtop, Sal's story, Internet of things (IoT), privacy, totalitarianism, cryptographic, decline of the computer addict, crystal detector/cat whisker detector, information overload.</p>
+      <p>It is shocking to know that Xerox actually envisioned so many technologies at such an early stage, and inspired the birth of personal computers and systems of Mac and Windows. As quoted in the interview with Steve Jobs, what impressed him at the very first point the GUI(Graphical User Interface) that he believes would be popular around the world and it came true. All the pads, screens, laptops, palmtops, etc. mentioned in the passage are all connected with an interface for users to interact with, and those imitation of traditional books and desktops also reminds me of Stanley Kubrick's 2001: A Space Odyssey, which also presented ideas and prototypes of future products like pads, and so on. Ubiquitous computing sounds really like the nowadays idea of Internet of things that also a great trend every tech company wanted to pursue, to some extent it already come true that we actually are surrounded with tens or hundreds of computers in our home, workplace, and even on the streets. The popularization of 5G also facilitated this process, which makes us believe that network will be finally embedded in our daily life deeper and deeper, even may leading us into the virtual world one day.</p>
+
+      <script src="scripts/main.js"></script>
+</body>

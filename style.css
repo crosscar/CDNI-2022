@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: black;
+}
+
+h1 + p {
+    font-size: 200%;
+  }
+
+li {
+    color: purple;
+}
+
+li {
+    list-style-type: circle;
+  }
+
+.special {
+    color:orange;
+    font-weight: bold;
+}
+
+.span1 {
+    color: black;
+    font-weight: bold;
+}
