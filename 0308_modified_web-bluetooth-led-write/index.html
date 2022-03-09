@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+   <title>Dyson Sphere Project</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dyson Sphere Project via Bluetooth</h1>
+
+  <p>Uses the Web Bluetooth API to make Bluetooth connections 
+    to a plain JavaScript page.   </p>
+
+    <p> The Arduino Bluetooth code part refers and modificates to the ArduinoBLE library example called <a href="https://github.com/arduino-libraries/ArduinoBLE/tree/master/examples/Peripheral/LED">LED</a>. 
+    <p> This page itself refers Tom's Bluetooth example called <a href="https://github.com/tigoe/BluetoothLE-Examples/tree/main/web-bluetooth/web-bluetooth-LED-write">web-bluetooth-LED-write</a>   </p>
+    
+    </p>  
+
+    <br>
+    <br>
+
+  <input type="button" id="connect" value="connect"><br>
+  <br>
+  <div id="device">no device yet</div>
+  <br>
+  LED Dimming:<input type="checkbox" id="writeButton" value="Change LED">
+</body>
+</html>
